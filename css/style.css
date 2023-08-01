@@ -64,8 +64,8 @@ header:hover {
 }
 
 .menu>li>a {
-    font-size: 1.2rem;
     display: block;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -90,6 +90,13 @@ header .col-2>button {
     margin-right: 4%;
 }
 
+header .col-2>button:hover{
+    transform: scale(1.05);
+}
+
+header select:hover{
+    transform: scale(1.05);
+}
 header:hover .col-2>button {
     color: #000;
     border: 1px solid #000;
@@ -568,7 +575,7 @@ main {
     color: #808080;
 }
 
-.youtube .youbox:hover{
+.youtube .youbox:hover {
     transform: scale(1.05);
 }
 
@@ -928,13 +935,16 @@ footer>button {
         top: 0;
         left: 45%;
     }
+
     .youtube .youbox {
         width: 100%;
         height: 55%;
     }
+
     .youtube a>span {
         bottom: 0;
     }
+
     .letter .newstext h1 {
         font-size: 2rem;
     }
@@ -994,6 +1004,10 @@ footer>button {
         display: block;
     }
 
+    header nav {
+        display: none;
+    }
+
     .main .topbox .toptext h3 {
         margin: 5% 0;
         font-size: 3rem;
@@ -1002,71 +1016,80 @@ footer>button {
     .main .topbox .toptext p {
         display: none;
     }
+
     .news {
         margin-left: 0;
         margin: auto;
     }
+
     .newsbox {
         width: 100%;
         margin: auto;
         display: block;
         margin-left: 10%;
     }
+
     .newsbox .box {
         transition: 0;
-        width:80%;
+        width: 80%;
         margin: 10% auto;
     }
-    .newsbox figure img{
+
+    .newsbox figure img {
         transition: 0;
     }
-    
-.newsbox .textbox h6 {
-    font-weight: 900;
-    margin: 5% 0;
-}
 
-.newsbox .textbox p {
-    font-size: 1.5rem;
-}
-.coming .box {
-    width: 80%;
-    margin: auto;
-}
-.coming .box figure{
-    margin: auto;
-}
-.coming .text {
-    margin-left:10% ;
-}
+    .newsbox .textbox h6 {
+        font-weight: 900;
+        margin: 5% 0;
+    }
 
-.coming .text p {
-    color: #808080;
-    margin-bottom: 10%;
-}
-.vision .p {
-    font-size: 1.1rem;
-}
+    .newsbox .textbox p {
+        font-size: 1.5rem;
+    }
+
+    .coming .box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .coming .box figure {
+        margin: auto;
+    }
+
+    .coming .text {
+        margin-left: 10%;
+    }
+
+    .coming .text p {
+        color: #808080;
+        margin-bottom: 10%;
+    }
+
+    .vision .p {
+        font-size: 1.1rem;
+    }
 
 
-.vision h4 {
-    font-size: 1rem;
-    line-height: 35px;
-}
-.vision .box2 ul {
-    font-size: .8rem;
-}
+    .vision h4 {
+        font-size: 1rem;
+        line-height: 35px;
+    }
 
-.vision .box2 .list .box {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 30px;
-}
+    .vision .box2 ul {
+        font-size: .8rem;
+    }
 
-.vision .box2 .list .line {
-    width: 3px;
-    height: 160px;
-}
+    .vision .box2 .list .box {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .vision .box2 .list .line {
+        width: 3px;
+        height: 160px;
+    }
 
     .letter .newstext h1 {
         font-size: 1.5rem;
@@ -1090,107 +1113,144 @@ footer>button {
         height: 40px;
         font-size: .4rem;
     }
-    
-footer {
-    width: 100%;
-    border-top: 1px solid rgb(255, 166, 0);
-    position: relative;
+
+    footer {
+        width: 100%;
+        border-top: 1px solid rgb(255, 166, 0);
+        position: relative;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer .flogo {
+        display: block;
+        width: 100%;
+        height: 20%;
+        float: none;
+    }
+
+    footer .flogo img {
+        margin: 5% auto;
+    }
+
+    footer .ftext {
+        display: block;
+        height: 0;
+        margin-top: 0%;
+    }
+
+    footer .ftext ul {
+        width: 100%;
+        height: 40px;
+        margin-right: 0;
+        font-size: 1rem;
+        line-height: 50px;
+    }
+
+    footer .ftext ul li {
+        float: left;
+        margin: 0 3%;
+    }
+
+    footer .f_menu {
+        border-top: 1px solid rgb(255, 166, 0);
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer .ftext .sns {
+        display: none;
+    }
+
+    footer .copy {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        margin-top: 3%;
+    }
+
+    footer .copy span {
+        font-size: 1rem;
+    }
+
+    footer .copy p {
+        font-size: 0.9rem;
+    }
+
+    footer>button {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+    }
 }
 
-footer {
-    position: relative;
-}
-
-footer .flogo {
-    display: block;
-    width: 100%;
-    height:20%;
-    float: none;
-}
-
-footer .flogo img {
-    margin:5% auto;
-}
-
-footer .ftext {
-    display: block;
-    height:0;
-    margin-top: 0%;
-}
-
-footer .ftext ul {
-    width: 100%;
-    height:40px;
-    margin-right: 0;
-    font-size: 1rem;
-    line-height: 50px;
-}
-
-footer .ftext ul li{
-    float: left;
-    margin: 0 3%;
-}
-footer .f_menu{
-    border-top: 1px solid rgb(255, 166, 0);
-    position: absolute;
-    bottom: 0;
-}
-footer .ftext .sns{
-    display: none;
-}
-footer .copy {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    margin-top: 3%;
-}
-footer .copy span {
-    font-size: 1rem;
-}
-footer .copy p {
-    font-size: 0.9rem;
-}
-
-footer>button {
-    position: absolute;
-    top: 30%;
-    right: 5%;
-    width: 40px;
-    height: 40px;
-}
-}
-
-@media screen and (max-width:650px){
-.main .topbox .toptext h3 {
+@media screen and (max-width:650px) {
+    .main .topbox .toptext h3 {
         margin: 3% 0;
         font-size: 2.5rem;
     }
-.letter{
-    display: none;
-}
-footer .ftext ul {
-    width: 100%;
-    height:40px;
-    margin-right: 0;
-    font-size: .9rem;
-    line-height: 50px;
+
+    .letter {
+        display: none;
+    }
+
+    footer .ftext ul {
+        width: 100%;
+        height: 40px;
+        margin-right: 0;
+        font-size: .9rem;
+        line-height: 50px;
+    }
+
+    footer .ftext ul li {
+        float: left;
+        margin: 0 3%;
+    }
+
 }
 
-footer .ftext ul li{
-    float: left;
-    margin: 0 3%;
-}
+@media screen and (max-width:610px) {
+    header .logo {
+        margin-top: 4vh;
+    }
 
-}
-@media screen and (max-width:610px){
-    .coming{
+    .coming {
         width: 90%;
         margin: auto;
     }
 }
+
 @media screen and (max-width:575px) {
+    header .logo {
+        margin-left: 20px;
+    }
+
+    nav {
+        top: 10%;
+    }
+
+    nav .search input {
+        width: 140px;
+        height: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: #808080;
+    }
+
+    nav ul li {
+        font-size: .9rem;
+    }
+
+    nav .search p {
+        font-size: 1rem;
+
+    }
+
     /* 비전 col변경 */
-    
     .news .title h2 {
         font-size: 1.5rem;
     }
@@ -1215,6 +1275,13 @@ footer .ftext ul li{
         top: 10px;
     }
 
+    .vision .box1 {
+        margin-bottom: 10%;
+    }
+    .vision h4{
+        text-align: center;
+    }
+
     .youtube .title h2 {
         font-size: 1.5rem;
     }
@@ -1234,19 +1301,105 @@ footer .ftext ul li{
     .spon .title .circle2 {
         left: 185px;
     }
+
+    .spon .allbox figure img {
+        width: 100%;
+        height: 90%;
+    }
+
     .main .topbox .toptext h3 {
-        margin: 3% 0;
-        font-size: 1.5rem;
+        margin: 5% 0;
+        font-size: 2rem;
     }
+
+    .news figure img {
+        opacity: 1;
+    }
+
+
+    .youtube .youbox {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+    }
+
+    .youtube h5 {
+        margin-left: 5%;
+    }
+
+    .youtube a>span {
+        position: absolute;
+        left: 7%;
+        bottom: -35%;
+        color: #808080;
+    }
+
+    footer {
+        height: 400px;
+    }
+
     footer .ftext ul {
-      font-size: .8rem;
+        font-size: 1rem;
     }
+
+    footer .ftext ul li {
+        margin: 0 7px;
+    }
+
     footer .copy {
         position: absolute;
         top: 40%;
-        left: 10%;
-        margin-top: 3%;
+        left: 5%;
+        margin-top: 0;
+    }
+
+    footer .copy p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:510px) {
+    footer ul {
+        display: none;
     }
 }
 
-@media screen and (max-width:400px) {}
+@media screen and (max-width:400px) {
+    header {
+        height: 15vh;
+    }
+
+    header .logo {
+        transform: scale(5.5);
+        margin-top: 6vh;
+    }
+
+    nav {
+        top: 15%;
+    }
+
+    nav .search input {
+        width: 140px;
+        height: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: #808080;
+    }
+
+    nav ul li {
+        font-size: .9rem;
+    }
+
+    nav .search p {
+        font-size: 1rem;
+    }
+
+    footer .copy {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        margin-top: -5%;
+    }
+
+}
