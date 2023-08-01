@@ -64,8 +64,8 @@ header:hover {
 }
 
 .menu>li>a {
-    font-size: 1.2rem;
     display: block;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -90,6 +90,13 @@ header .col-2>button {
     margin-right: 4%;
 }
 
+header .col-2>button:hover{
+    transform: scale(1.05);
+}
+
+header select:hover{
+    transform: scale(1.05);
+}
 header:hover .col-2>button {
     color: #000;
     border: 1px solid #000;
@@ -1270,6 +1277,9 @@ footer>button {
 
     .vision .box1 {
         margin-bottom: 10%;
+    }
+    .vision h4{
+        text-align: center;
     }
 
     .youtube .title h2 {
