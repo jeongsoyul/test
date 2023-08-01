@@ -429,7 +429,7 @@ main {
 }
 
 .vision .p {
-    font-size: 1.5vw;
+    font-size: 2rem;
     margin-bottom: 10%;
     text-align: center;
 }
@@ -544,13 +544,13 @@ main {
     margin-bottom: 10%;
 }
 
-.youtube .box {
+.youtube .youbox {
     width: 100%;
     height: 75%;
     transition: .2s;
 }
 
-.youtube .box iframe {
+.youtube .youbox iframe {
     width: 100%;
     height: 100%;
 }
@@ -568,7 +568,7 @@ main {
     color: #808080;
 }
 
-.youtube .col-4:hover .box {
+.youtube .youbox:hover{
     transform: scale(1.05);
 }
 
@@ -690,7 +690,6 @@ main {
 
 footer {
     width: 100%;
-    height: 50vh;
     border-top: 1px solid rgb(255, 166, 0);
     position: relative;
 }
@@ -929,7 +928,13 @@ footer>button {
         top: 0;
         left: 45%;
     }
-
+    .youtube .youbox {
+        width: 100%;
+        height: 55%;
+    }
+    .youtube a>span {
+        bottom: 0;
+    }
     .letter .newstext h1 {
         font-size: 2rem;
     }
@@ -1036,10 +1041,212 @@ footer>button {
 }
 
 .coming .text p {
-    font-size: 1.5rem;
     color: #808080;
     margin-bottom: 10%;
 }
-@media screen and (max-width:575px) {}
+.vision .p {
+    font-size: 1.1rem;
+}
+
+
+.vision h4 {
+    font-size: 1rem;
+    line-height: 35px;
+}
+.vision .box2 ul {
+    font-size: .8rem;
+}
+
+.vision .box2 .list .box {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.vision .box2 .list .line {
+    width: 3px;
+    height: 160px;
+}
+
+    .letter .newstext h1 {
+        font-size: 1.5rem;
+    }
+
+    .letter .newstext p {
+        font-size: .8rem;
+    }
+
+    .letter input {
+        width: 120px;
+        height: 35px;
+        font-size: .5rem;
+    }
+
+    /* click 했을 떄 벨루 사라지게 */
+    .letter button {
+        left: 55%;
+        top: -5%;
+        width: 40px;
+        height: 40px;
+        font-size: .4rem;
+    }
+    
+footer {
+    width: 100%;
+    border-top: 1px solid rgb(255, 166, 0);
+    position: relative;
+}
+
+footer {
+    position: relative;
+}
+
+footer .flogo {
+    display: block;
+    width: 100%;
+    height:20%;
+    float: none;
+}
+
+footer .flogo img {
+    margin:5% auto;
+}
+
+footer .ftext {
+    display: block;
+    height:0;
+    margin-top: 0%;
+}
+
+footer .ftext ul {
+    width: 100%;
+    height:40px;
+    margin-right: 0;
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+footer .ftext ul li{
+    float: left;
+    margin: 0 3%;
+}
+footer .f_menu{
+    border-top: 1px solid rgb(255, 166, 0);
+    position: absolute;
+    bottom: 0;
+}
+footer .ftext .sns{
+    display: none;
+}
+footer .copy {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    margin-top: 3%;
+}
+footer .copy span {
+    font-size: 1rem;
+}
+footer .copy p {
+    font-size: 0.9rem;
+}
+
+footer>button {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media screen and (max-width:650px){
+.main .topbox .toptext h3 {
+        margin: 3% 0;
+        font-size: 2.5rem;
+    }
+.letter{
+    display: none;
+}
+footer .ftext ul {
+    width: 100%;
+    height:40px;
+    margin-right: 0;
+    font-size: .9rem;
+    line-height: 50px;
+}
+
+footer .ftext ul li{
+    float: left;
+    margin: 0 3%;
+}
+
+}
+@media screen and (max-width:610px){
+    .coming{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:575px) {
+    /* 비전 col변경 */
+    
+    .news .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .news .title .circle {
+        top: 10px;
+    }
+
+    .coming .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .coming .title .circle {
+        top: 10px;
+    }
+
+    .vision .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .vision .title .circle {
+        top: 10px;
+    }
+
+    .youtube .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .youtube .title .circle {
+        top: 10px;
+    }
+
+    .spon .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .spon .title .circle1 {
+        left: 190px;
+    }
+
+    .spon .title .circle2 {
+        left: 185px;
+    }
+    .main .topbox .toptext h3 {
+        margin: 3% 0;
+        font-size: 1.5rem;
+    }
+    footer .ftext ul {
+      font-size: .8rem;
+    }
+    footer .copy {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        margin-top: 3%;
+    }
+}
 
 @media screen and (max-width:400px) {}
